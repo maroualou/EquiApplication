@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@id/SeanceTimeLabel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2002-09-09 09:09"
+        ></TextView>
+    <TextView
+        android:id="@id/SeanceDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1h30min"
+        android:gravity="center_horizontal"></TextView>
+
+    <TextView
+        android:id="@id/SeacneMonitor"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="absellam daanoun"
+        android:gravity="center_horizontal"></TextView>
+    <ImageButton
+        android:id="@id/defaultBtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_addnote"
+        android:background="@android:color/transparent"
+        ></ImageButton>
+</LinearLayout>

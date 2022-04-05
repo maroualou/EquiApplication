@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    tools:context=".EditClientActivity"
+    android:background="@drawable/backgroud_titlebar">
+
+    <ImageView
+        android:id="@id/imageProfile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_background"
+
+        ></ImageView>
+    <TextView
+        android:id="@id/Fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/Lname"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="maroua "
+        android:textSize="25dp"
+        android:gravity="center"
+        ></TextView>
+    <TextView
+        android:id="@id/Lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toEndOf="@id/imageProfile"
+        app:layout_constraintTop_toBottomOf="@id/Fname"
+        android:text="m'channa "
+        android:gravity="center"
+        android:textSize="25dp"
+        ></TextView>
+    <Button
+        android:id="@id/showSeances"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seances"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:onClick="ShowSeances"></Button>
+    <Button
+        android:id="@id/saveClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:onClick="update"></Button>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:foregroundGravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="119dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/fnamlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Firt name : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/fnametxt"
+                    app:layout_constraintEnd_toStartOf="@id/fnametxt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/fnametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/fnamlabel"
+                    app:layout_constraintTop_toTopOf="parent"></EditText>
+
+                <TextView
+                    android:id="@id/lnamlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last name : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/lnametxt"
+                    app:layout_constraintEnd_toStartOf="@id/lnametxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/lnametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/lnamlabel"
+                    app:layout_constraintTop_toBottomOf="@id/fnametxt"></EditText>
+
+                <TextView
+                    android:id="@id/inumberlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identity N : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/inumbertxt"
+                    app:layout_constraintEnd_toStartOf="@id/inumbertxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/inumbertxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/inumberlabel"
+                    app:layout_constraintTop_toBottomOf="@id/lnametxt"></EditText>
+
+                <TextView
+                    android:id="@id/identityDoclabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Identity code : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/identityDoctxt"
+                    app:layout_constraintEnd_toStartOf="@id/identityDoctxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/identityDoctxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/identityDoclabel"
+                    app:layout_constraintTop_toBottomOf="@id/inumbertxt"></EditText>
+
+                <TextView
+                    android:id="@id/emaillabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-mail     : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/emailtxt"
+                    app:layout_constraintEnd_toStartOf="@id/emailtxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/emailtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/emaillabel"
+                    app:layout_constraintTop_toBottomOf="@id/identityDoctxt"></EditText>
+
+                <TextView
+                    android:id="@id/paswordlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password     : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/paswordtxt"
+                    app:layout_constraintEnd_toStartOf="@id/paswordtxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/paswordtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/paswordlabel"
+                    app:layout_constraintTop_toBottomOf="@id/emailtxt"></EditText>
+
+                <TextView
+                    android:id="@id/phonelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone     : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/phonetxt"
+                    app:layout_constraintEnd_toStartOf="@id/phonetxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/phonetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/phonelabel"
+                    app:layout_constraintTop_toBottomOf="@id/paswordtxt"></EditText>
+
+                <TextView
+                    android:id="@id/birthDatelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BirthDate : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/birthDatetxt"
+                    app:layout_constraintEnd_toStartOf="@id/birthDatetxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/birthDatetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/birthDatelabel"
+                    app:layout_constraintTop_toBottomOf="@id/phonetxt"></EditText>
+
+                <TextView
+                    android:id="@id/inscriptionDatelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="inscription Date : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/inscriptionDatetxt"
+                    app:layout_constraintEnd_toStartOf="@id/inscriptionDatetxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/inscriptionDatetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/inscriptionDatelabel"
+                    app:layout_constraintTop_toBottomOf="@id/birthDatetxt"></EditText>
+
+                <TextView
+                    android:id="@id/ensurenceValiditylabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ensurence Validity : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/ensurenceValiditytxt"
+                    app:layout_constraintEnd_toStartOf="@id/ensurenceValiditytxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/ensurenceValiditytxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/ensurenceValiditylabel"
+                    app:layout_constraintTop_toBottomOf="@id/inscriptionDatetxt"></EditText>
+
+                <TextView
+                    android:id="@id/licenceValiditylabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="licence Validity : "
+                    app:layout_constraintBaseline_toBaselineOf="@id/licenceValiditytxt"
+                    app:layout_constraintEnd_toStartOf="@id/licenceValiditytxt"
+                    app:layout_constraintStart_toStartOf="parent"></TextView>
+
+                <EditText
+                    android:id="@id/licenceValiditytxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/licenceValiditylabel"
+                    app:layout_constraintTop_toBottomOf="@id/ensurenceValiditytxt"></EditText>
+
+                <TextView
+                    android:id="@id/priceRatelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price Rate : "
+                    app:layout_constraintEnd_toStartOf="@id/priceRatetxt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/priceRatetxt" />
+
+                <EditText
+                    android:id="@id/priceRatetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/priceRatelabel"
+                    app:layout_constraintTop_toBottomOf="@id/licenceValiditytxt"></EditText>
+                <TextView
+                    android:id="@id/noteslabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notes : "
+                    app:layout_constraintEnd_toStartOf="@id/notestxt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/notestxt"></TextView>
+
+                <EditText
+                    android:id="@id/notestxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintStart_toEndOf="@id/noteslabel"
+                    app:layout_constraintTop_toBottomOf="@id/licenceValiditytxt"></EditText>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

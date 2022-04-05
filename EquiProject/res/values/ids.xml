@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="loginLayout" type="id" />
+    <item name="loginLabel" type="id" />
+    <item name="usernameLabel" type="id" />
+    <item name="usernameTxt" type="id" />
+    <item name="passwordLabel" type="id" />
+    <item name="passwordTxt" type="id" />
+    <item name="SeanceTimeLabel" type="id" />
+    <item name="SeacneMonitor" type="id" />
+    <item name="SeanceDuration" type="id" />
+    <item name="buttonProfil" type="id" />
+    <item name="buttonFutureSeances" type="id" />
+    <item name="buttonHistorique" type="id" />
+    <item name="listSeances" type="id" />
+    <item name="SeanceTitleBarre" type="id" />
+    <item name="listHistoriques" type="id" />
+    <item name="imageProfile" type="id" />
+    <item name="Fname" type="id" />
+    <item name="Lname" type="id" />
+    <item name="birthDate" type="id" />
+    <item name="BirthDate" type="id" />
+    <item name="identityDoc" type="id" />
+    <item name="identityNumber" type="id" />
+    <item name="inscriptionDate" type="id" />
+    <item name="InscriptionDate" type="id" />
+    <item name="ensurenceValidity" type="id" />
+    <item name="EnsurenceValidity" type="id" />
+    <item name="licenceValidity" type="id" />
+    <item name="LicenceValidity" type="id" />
+    <item name="clientEmail" type="id" />
+    <item name="ClientEmail" type="id" />
+    <item name="clientPhone" type="id" />
+    <item name="ClientPhone" type="id" />
+    <item name="priceRate" type="id" />
+    <item name="PriceRate" type="id" />
+    <item name="autoL" type="id" />
+    <item name="AccueilTitle" type="id" />
+    <item name="TitleBarRemarque" type="id" />
+    <item name="seanceId" type="id" />
+    <item name="remarquetxt" type="id" />
+    <item name="defaultBtnId" type="id" />
+    <item name="TitleBarRemarquetxt" type="id" />
+    <item name="seanceIdtxt" type="id" />
+    <item name="SeanceTitle" type="id" />
+    <item name="HistoriqueTitle" type="id" />
+</resources>

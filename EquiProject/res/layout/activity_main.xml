@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/background_light"
+        android:layout_marginHorizontal="35dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp"
+        >
+        <TextView
+            android:id="@id/loginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="login"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@id/loginLayout"
+            app:layout_constraintStart_toStartOf="@id/loginLayout"
+            app:layout_constraintTop_toTopOf="@id/loginLayout"></TextView>
+        <ImageButton
+            android:id="@id/usernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/loginLayout"
+           app:layout_constraintTop_toTopOf="@id/usernameTxt"
+            app:layout_constraintBottom_toBottomOf="@id/usernameTxt"
+            app:layout_constraintEnd_toStartOf="@id/usernameTxt"
+            android:src="@drawable/ic_username"
+            ></ImageButton>
+        <EditText
+            android:id="@id/usernameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/usernameLabel"
+            app:layout_constraintTop_toBottomOf="@id/loginLabel"
+            app:layout_constraintEnd_toEndOf="@id/loginLayout"
+            android:hint="enter you username"></EditText>
+        <ImageButton
+            android:id="@id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username :"
+            app:layout_constraintStart_toStartOf="@id/loginLayout"
+            app:layout_constraintTop_toTopOf="@id/passwordTxt"
+            app:layout_constraintBottom_toBottomOf="@id/passwordTxt"
+            app:layout_constraintEnd_toStartOf="@id/passwordTxt"
+            android:src="@drawable/ic_password"
+            ></ImageButton>
+        <EditText
+            android:id="@id/passwordTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/passwordLabel"
+            app:layout_constraintTop_toBottomOf="@id/usernameTxt"
+            android:hint="enter you password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@id/loginLayout"></EditText>
+        <Switch
+            android:id="@id/autoL"
+            app:layout_constraintTop_toBottomOf="@id/passwordTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="memoriser les information"></Switch>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Connexion"
+            android:text="Connexion"
+            app:layout_constraintEnd_toEndOf="@id/loginLayout"
+            android:background="@color/TitleBarColor"
+            app:layout_constraintStart_toStartOf="@id/loginLayout"
+            app:layout_constraintTop_toBottomOf="@id/autoL"></Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
